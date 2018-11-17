@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Side Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <!-- THIS IS THE CROSS BUTTON -->
+        <span class="open-slide">
+            <a href="#" onclick="openSideMenu()">
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 30" width='30'>
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #00083a;
+                            }
+                        </style>
+                    </defs>
+                    <title>icon</title>
+                    <rect class="cls-1" y="12.54" width="27" height="4.92" rx="2.46" ry="2.46" />
+                    <rect class="cls-1" width="27" height="4.92" rx="2.46" ry="2.46" />
+                    <rect class="cls-1" y="25.08" width="27" height="4.92" rx="2.46" ry="2.46" />
+                </svg>
+            </a>
+        </span>
+
+
+        <!-- THIS IS CONTENT OF MAIN MENU -->
+        <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contract</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- THIS IS CONTENT OF SIDE MENU -->
+    <div class="side-nav" id="side-menu">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contract</a>
+
+    </div>
+    <div id="main">
+        <h1>Responsive Side Menu</h1>
+    </div>
+
+    <script src="main.js"></script>
+</body> 
+
+</html>

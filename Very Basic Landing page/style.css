@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color:white;
+}
+#showcase{
+    background-image: url(lake.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+#showcase h1{
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive;
+
+}
+#showcase p{
+    width: 40%;
+    text-align: center;
+    line-height: 1;
+
+}
+.button{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    border: 3px solid rgb(206, 206, 206);
+    width: 200px;
+    border-radius: 5px;
+
+
+}
+#section-a{
+    background: rgb(44, 40, 40);
+}
+
+#section-a, #section-b{
+    text-align: center;
+}
+#section-b{
+    display: flex;
+    justify-content: space-around;
+}
+.box-1{
+    border: 2px solid rgb(151, 151, 151);
+    background: rgb(48, 48, 48);
+
+}
