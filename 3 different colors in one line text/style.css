@@ -1,0 +1,33 @@
+.outer {
+  width: 1500px;
+  /*1500*/
+  border: 0px solid #38761d;
+  background-color: #000;
+  margin: 0 auto;
+  /* top+bottom  left+right */
+}
+
+p {
+  font-style: normal;
+  font-size: 168px;
+  font-family: georgia;
+  text-align: center;
+  padding-top: 63px;
+  /*102 */
+  padding-bottom: 230px;
+  /*500 */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hr3 {
+  color: green;
+}
+
+.hr4 {
+  color: blue;
+}
+
+.hr5 {
+  color: red;
+}
