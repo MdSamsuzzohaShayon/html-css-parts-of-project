@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri|Old+Standard+TT');
+/* font-family: 'Old Standard TT', serif;
+font-family: 'Amiri', serif; */
+
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+#showcase {
+    color: aliceblue;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Gallary.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    height: 4.5rem;
+    width: 100%;
+    background: rgb(0, 0, 39);
+    overflow: hidden;
+}
+
+
+.navbar-nav-item {
+    margin-top: 1.6rem;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.word-space {
+    word-spacing: 20px;
+}
+
+
+.first {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#icon {
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    top: 5px;
+}
+
+/* #icon:hover {
+    background: rgb(2, 2, 14);
+} */
+
+
+#full-menu {
+    color: black;
+    position: absolute;
+    height: 100vh;
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(226, 226, 226), rgb(165, 165, 165));
+    left: 0;
+    top: 0;
+}
+
+#full-menu {
+    width: 100%;
+    animation: fillBelow 1s both ease;
+}
+
+.container {
+    display: flex;
+
+}
+
+#close-btn {
+    padding: 20px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.left {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.left ul {
+    margin-top: 5rem;
+    line-height: 3rem;
+    font-family: 'Amiri', serif;
+}
+
+.left li {
+    font-size: 1.6rem;
+}
+
+.left a {
+    color: black;
+}
+
+.right {
+    flex-basis: 80%;
+    line-height: 2rem;
+}
+
+.com {
+    margin-top: 50px;
+}
+
+.right h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.right li {
+    margin: 1rem auto;
+}
+
+.competetion,
+.inside-uefa {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.competetion .item {
+    text-transform: uppercase;
+}
+
+.inside-uefa {
+    align-items: flex-start;
+}
+
+.feature {
+    width: 300px;
+}
+
+.feature a {
+    color: black;
+}
+
+.in {
+    margin-top: 50px;
+}
+
+
+@keyframes fillBelow{
+    0%{
+        transform: translateY(-100vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
