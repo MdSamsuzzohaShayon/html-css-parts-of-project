@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animate Dot CSS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <style>
+        /* CUSTOMIZING OF ANIMATE.CSS PROPERTY */
+        #section-1 {
+            animation-delay: 1s;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+
+        #section-2 {
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="text-center border shadow p-5 animated slideInDown">
+            <h1 class="display-4">Animate.css Sandbox</h1>
+        </header>
+
+        <section id="section-1" class="animated slideInLeft bg-faded p-5 my-3 border shadow">
+            <h1>Section One</h1>
+            <p>While shadows on components are disabled by default in Bootstrap and can be enabled via $enable-shadows,
+                you can also quickly add or remove a shadow with our box-shadow utility classes. Includes support for
+                .shadow-none and three default sizes (which have associated variables to match).</p>
+        </section>
+
+
+        <section id="section-2" class="animated slideInRight bg-faded p-5 my-3 border shadow">
+            <h1 id="anim-head">Section Two</h1>
+            <p id="anam-body">While shadows on components are disabled by default in Bootstrap and can be enabled via $enable-shadows,
+                you can also quickly add or remove a shadow with our box-shadow utility classes. Includes support for
+                .shadow-none and three default sizes (which have associated variables to match).</p>
+            <button id="animateBtn" class="btn btn-outline-secondary">Animate</button>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        //USING THIS JQUERY FOR CUSTOMIZE THE ANIMATION TIME// THIS IS OPTIONAL
+        $(function () {
+            //CREATE A CLICK EVENT FOR OUT BUTTON
+            $('#animateBtn').click(function(){
+                animate('#anim-head', 'bounce');
+                animate('#anam-body', 'shake');
+                return false;
+            })
+            //CUSTOM FUNCTION
+            function animate(element, animation) {
+                $(element).addClass('animated '+animation);
+                let wait = setTimeout(function(){
+                    $(element).removeClass();
+                }, 1000);
+            }
+        })
+    </script>
+</body>
+
+</html>
