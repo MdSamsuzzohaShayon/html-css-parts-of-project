@@ -1,0 +1,134 @@
+body,html{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+h2{
+    text-transform: capitalize;
+}
+.sec-1{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/sunset-lake-mountains-landscape-mood-holidays-1594719-pxhere.com.jpg) rgba(17, 3, 24, 0.507);
+    background-blend-mode: multiply;
+    /* opacity: 0.5; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (min-width:710px){
+   .container{
+    width: 70%;
+    padding-left: 15%;
+} 
+}
+@media (max-width:600px){
+    .container{
+     width: 100%;
+     padding: 0;
+ } 
+ }
+
+
+
+
+.menu{
+    padding-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2px;
+    flex-wrap: wrap;
+    /* background: rgba(0, 0, 48, 0.377); */
+}
+.btn{
+    color: white;
+    background: green;
+    border: none;
+    padding: 5px 25px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.row .col{
+    flex-basis: 40%;
+}
+.wcom{
+    /* word-spacing: 1rem; */
+    letter-spacing: 1rem;
+}
+.form-bx{
+    width: 400px;
+    color: black;
+    background: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    /* padding-right: 20px; */
+
+}
+.form input{
+    border:none;
+    padding: 10px;
+    background:rgb(202, 202, 202);
+}
+.form .btn{
+    padding: 10px;
+}
+.col-1 p{
+    width: 50%;
+}
+.sec-2{
+    padding-top: 5%;
+    background: rgb(218, 218, 218);
+}
+.boxes{
+    margin-top: 6%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(100px, auto);
+    padding-bottom: 5%;
+
+}
+.box{
+    background: white;
+    padding: 16px;
+    /* box-shadow: 3px 3px 10px 3px #a0a0a0; */
+}
+.lng-box{
+    grid-column: 2 / 4;
+}
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(47, 0, 92); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(117, 1, 163); 
+  }
