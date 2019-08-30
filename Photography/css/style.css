@@ -1,0 +1,16 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#image-output{
+    margin-left: 13% !important;
+}
+th , td {
+    padding: 5px !important; 
+}
+@media(max-width:768px){
+    #image-output{
+        margin-left: 0 !important;
+    }
+}
