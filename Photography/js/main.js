@@ -13,6 +13,7 @@ console.log(image_output.src);
 
 image.forEach(img => {
     img.addEventListener('click', e =>{
+        // e.preventDefault();
         // console.log(e.target.attributes);
         console.log(e.target.src);       
         // const image_src = e.target.src;
@@ -36,3 +37,14 @@ image.forEach(img => {
     }) ;
 });
 
+
+
+
+
+
+
+
+// JS FOR SEMANTIC UI
+$('.ui.modal')
+  .modal()
+;
