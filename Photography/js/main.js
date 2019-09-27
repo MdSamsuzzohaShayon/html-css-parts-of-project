@@ -1,5 +1,6 @@
 const image = document.querySelectorAll('.image');
 const image_output = document.getElementById('image-output');
+const img_contain = document.getElementById('img-container');
 console.log(image_output.src);
 // let image_output_src = image_output.src;
 
@@ -14,13 +15,14 @@ console.log(image_output.src);
 image.forEach(img => {
     img.addEventListener('click', e =>{
         // e.preventDefault();
-        // console.log(e.target.attributes);
+        console.log(e.target.attributes);
         console.log(e.target.src);       
         // const image_src = e.target.src;
         
         // image_output_src = e.target.src;
         // b.setAttribute("name", "helloButton");
         image_output.setAttribute('src', e.target.src);
+
 
 
         // console.log(image_output_src);
@@ -33,18 +35,17 @@ image.forEach(img => {
         // image_output.appendChild(img);
 
         // image_output.childNodes
+
+        
+
+
+
+        document.addEventListener('click', (f)=>{
+          // f.preventDefault();
+          img_contain.style.display = 'none';
+        });
         
     }) ;
 });
 
 
-
-
-
-
-
-
-// JS FOR SEMANTIC UI
-$('.ui.modal')
-  .modal()
-;

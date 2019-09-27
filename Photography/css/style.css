@@ -4,10 +4,14 @@
 }
 #img-container{
     /* display: none; */
-    /* position: absolute; */
+    /* float: left; */
+    position: absolute;
+    left: 20%;
+    top: 0;
 }
 #all-img-des{
-    /* position: relative; */
+    position: relative;
+    top: 0;
 }
 
 /* #image-output{
