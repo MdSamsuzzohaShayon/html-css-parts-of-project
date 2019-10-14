@@ -8,6 +8,7 @@ console.log(li);
 
 
 if (window.innerWidth <= 768) {
+    // location.reload();
     // console.log(menu.ELEMENT_NODE);
     // menu.style.display = 'none';
     // menu.ELEMENT_NODE

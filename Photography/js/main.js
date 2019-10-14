@@ -1,10 +1,13 @@
 const image = document.querySelectorAll('.image');
 const image_output = document.getElementById('image-output');
 const img_contain = document.getElementById('img-container');
+const bg_cover = document.getElementById('bg-cvr');
 console.log(image_output.src);
 // let image_output_src = image_output.src;
 
-// image_output.innerText.src = 
+
+// SEARCH ON GOOGLE
+// how to know image position and size by using javascript
 
 
 
@@ -22,6 +25,9 @@ image.forEach(img => {
         // image_output_src = e.target.src;
         // b.setAttribute("name", "helloButton");
         image_output.setAttribute('src', e.target.src);
+        img_contain.style.display = 'block';
+        bg_cover.style.background = 'rgb(0, 59, 45)';
+
 
 
 
@@ -40,10 +46,10 @@ image.forEach(img => {
 
 
 
-        document.addEventListener('click', (f)=>{
-          // f.preventDefault();
-          img_contain.style.display = 'none';
-        });
+        // document.addEventListener('click', (f)=>{
+        //   // f.preventDefault();
+        //   img_contain.style.display = 'none';
+        // });
         
     }) ;
 });
