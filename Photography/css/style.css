@@ -1,0 +1,29 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+#img-container{
+    display: none;
+    /* float: left; */
+    position: absolute;
+    left: 20%;
+    top: 0;
+}
+#all-img-des{
+    position: relative;
+    top: 0;
+    /* background: rgb(0, 59, 45); */
+}
+
+
+/* #image-output{
+    margin-left: 13% !important;
+} */
+th , td {
+    padding: 5px !important; 
+}
+/* @media(max-width:768px){
+    #image-output{
+        margin-left: 0 !important;
+    }
+} */
